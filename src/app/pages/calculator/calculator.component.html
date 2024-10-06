@@ -1,0 +1,20 @@
+<div class="container-fluid min-vh-100 d-flex align-items-center justify-content-center bg-light py-5">
+    <div class="card shadow" style="max-width: 300px;">
+      <div class="card-header bg-dark text-end p-0">
+        <h2 class="display-4 text-white p-3 mb-0">{{ display }}</h2>
+      </div>
+      <div class="card-body p-0 bg-secondary">
+        <div class="row g-0">
+          <ng-container *ngFor="let row of buttons">
+            <div *ngFor="let button of row" [ngClass]="getButtonClass(button)">
+              <button 
+                class="btn btn-lg w-100 h-100 rounded-0 {{ getButtonStyles(button) }}"
+                (click)="onButtonClick(button)">
+                {{ button }}
+              </button>
+            </div>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>

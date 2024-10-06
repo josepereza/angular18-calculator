@@ -1,0 +1,10 @@
+.btn-calculator {
+    font-size: 1.5rem;
+    transition: all 0.2s;
+  }
+  .btn-calculator:hover {
+    opacity: 0.8;
+  }
+  .display-4 {
+    font-size: 3rem;
+  }
